@@ -8,6 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXPORT NSString *const PK_TITLE;
+FOUNDATION_EXPORT NSString *const PK_ITEM;
+
 @interface PreferencesKit : NSObject
+
+/**
+ *  Shared Instance
+ *
+ *  @return shared preferences kit instance.
+ */
++ (instancetype)kit;
+
+/**
+ *  Configuration file reader
+ *
+ *  @return NSArray of objects, grouped.
+ */
+- (NSArray *)configurations;
 
 @end
