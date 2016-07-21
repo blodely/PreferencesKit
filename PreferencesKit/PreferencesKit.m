@@ -8,6 +8,7 @@
 
 #import "PreferencesKit.h"
 #import "FCFileManager.h"
+#import "PKEntity.h"
 
 NSString *const PK_TITLE = @"PK_TITLE";
 NSString *const PK_ITEM = @"PK_ITEM";
@@ -48,8 +49,21 @@ static PreferencesKit *sharedPreferencesKit;
 	}
 	
 	if ([FCFileManager isFileItemAtPath:filename]) {
+		NSMutableArray *ret = [NSMutableArray arrayWithCapacity:1];
 		
-		return [FCFileManager readFileAtPathAsArray:filename];
+		NSArray *pkentitys = [FCFileManager readFileAtPathAsArray:filename];
+		
+		for (NSDictionary *one in pkentitys) {
+			PKEntity *entity = [PKEntity new];
+			entity.type = [one[@"type"] intValue];
+			[ret addObject:entity];
+		}
+		
+		if ([ret count] > 0) {
+			return [NSArray arrayWithArray:ret];
+		}
+		
+		return nil;
 	} else {
 		NSLog(@"CONFIGURATION FILE NOT FOUND");
 	}
