@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "CustomSettingsViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// OVERRIDE POINT FOR CUSTOMIZATION AFTER APPLICATION LAUNCH.
+	
+	_window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	
+	UITabBarController *tabs = [[UITabBarController alloc] init];
+	
+	UINavigationController *navCustom = [[UINavigationController alloc] initWithRootViewController:[[CustomSettingsViewController alloc] init]];
+	navCustom.tabBarItem.title = @"Custom";
+	navCustom.tabBarItem.image = [UIImage imageNamed:@""];
+	navCustom.tabBarController.tabBar.translucent = NO;
+	
+	tabs.viewControllers = @[navCustom,];
+	
+	_window.rootViewController = tabs;
+	
+	[_window makeKeyAndVisible];
+	
 	return YES;
 }
 

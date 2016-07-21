@@ -11,13 +11,13 @@
 		287CC75F41DBA8294B82CF23 /* libPods-PreferencesSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED910FE920F11AF00BC712E9 /* libPods-PreferencesSampleTests.a */; };
 		B619F44E1D4065380021909F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F44D1D4065380021909F /* main.m */; };
 		B619F4511D4065380021909F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4501D4065380021909F /* AppDelegate.m */; };
-		B619F4541D4065380021909F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4531D4065380021909F /* ViewController.m */; };
-		B619F4571D4065380021909F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619F4551D4065380021909F /* Main.storyboard */; };
 		B619F4591D4065380021909F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B619F4581D4065380021909F /* Assets.xcassets */; };
 		B619F45C1D4065380021909F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619F45A1D4065380021909F /* LaunchScreen.storyboard */; };
 		B619F4671D4065380021909F /* PreferencesSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4661D4065380021909F /* PreferencesSampleTests.m */; };
 		B619F4721D4065380021909F /* PreferencesSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4711D4065380021909F /* PreferencesSampleUITests.m */; };
 		B619F4821D4066110021909F /* PreferencesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4811D4066110021909F /* PreferencesKit.m */; };
+		B619F4871D4078730021909F /* CustomSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4851D4078730021909F /* CustomSettingsViewController.m */; };
+		B619F4881D4078730021909F /* CustomSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B619F4861D4078730021909F /* CustomSettingsViewController.xib */; };
 		EC6AB0DC10181F0F78586019 /* libPods-PreferencesSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA28E194EC0290439D0E513 /* libPods-PreferencesSample.a */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +50,6 @@
 		B619F44D1D4065380021909F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B619F44F1D4065380021909F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B619F4501D4065380021909F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B619F4521D4065380021909F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B619F4531D4065380021909F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B619F4561D4065380021909F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B619F4581D4065380021909F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B619F45B1D4065380021909F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B619F45D1D4065380021909F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +61,9 @@
 		B619F4731D4065380021909F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B619F4801D4066110021909F /* PreferencesKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesKit.h; sourceTree = "<group>"; };
 		B619F4811D4066110021909F /* PreferencesKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesKit.m; sourceTree = "<group>"; };
+		B619F4841D4078730021909F /* CustomSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSettingsViewController.h; sourceTree = "<group>"; };
+		B619F4851D4078730021909F /* CustomSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSettingsViewController.m; sourceTree = "<group>"; };
+		B619F4861D4078730021909F /* CustomSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSettingsViewController.xib; sourceTree = "<group>"; };
 		C6F5BBF574F8376C47B61AA2 /* libPods-PreferencesSampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreferencesSampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED910FE920F11AF00BC712E9 /* libPods-PreferencesSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreferencesSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,9 +147,7 @@
 				B619F47F1D4065520021909F /* PreferencesKit */,
 				B619F44F1D4065380021909F /* AppDelegate.h */,
 				B619F4501D4065380021909F /* AppDelegate.m */,
-				B619F4521D4065380021909F /* ViewController.h */,
-				B619F4531D4065380021909F /* ViewController.m */,
-				B619F4551D4065380021909F /* Main.storyboard */,
+				B619F4831D4077E80021909F /* _Scene */,
 				B619F4581D4065380021909F /* Assets.xcassets */,
 				B619F45A1D4065380021909F /* LaunchScreen.storyboard */,
 				B619F45D1D4065380021909F /* Info.plist */,
@@ -192,6 +190,16 @@
 			);
 			name = PreferencesKit;
 			path = ../../PreferencesKit;
+			sourceTree = "<group>";
+		};
+		B619F4831D4077E80021909F /* _Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B619F4841D4078730021909F /* CustomSettingsViewController.h */,
+				B619F4851D4078730021909F /* CustomSettingsViewController.m */,
+				B619F4861D4078730021909F /* CustomSettingsViewController.xib */,
+			);
+			path = _Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B619F4881D4078730021909F /* CustomSettingsViewController.xib in Resources */,
 				B619F45C1D4065380021909F /* LaunchScreen.storyboard in Resources */,
 				B619F4591D4065380021909F /* Assets.xcassets in Resources */,
-				B619F4571D4065380021909F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,8 +465,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B619F4541D4065380021909F /* ViewController.m in Sources */,
 				B619F4821D4066110021909F /* PreferencesKit.m in Sources */,
+				B619F4871D4078730021909F /* CustomSettingsViewController.m in Sources */,
 				B619F4511D4065380021909F /* AppDelegate.m in Sources */,
 				B619F44E1D4065380021909F /* main.m in Sources */,
 			);
@@ -496,14 +504,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B619F4551D4065380021909F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B619F4561D4065380021909F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B619F45A1D4065380021909F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
