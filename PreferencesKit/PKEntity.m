@@ -7,6 +7,7 @@
 //
 
 #import "PKEntity.h"
+#import "LYPreferencesKit.h"
 
 @implementation PKEntity
 

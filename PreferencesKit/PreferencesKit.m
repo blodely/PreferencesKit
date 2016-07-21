@@ -7,8 +7,7 @@
 //
 
 #import "PreferencesKit.h"
-#import "FCFileManager.h"
-#import "PKEntity.h"
+#import "LYPreferencesKit.h"
 
 NSString *const PK_TITLE = @"PK_TITLE";
 NSString *const PK_ITEM = @"PK_ITEM";

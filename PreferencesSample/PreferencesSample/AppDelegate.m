@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FCFileManager.h"
+#import "LYPreferencesKit.h"
 
 #import "CustomSettingsViewController.h"
 
@@ -23,7 +23,9 @@
 	
 //------------------------------------------------------------------------------------
 	NSString *filename = [NSHomeDirectory() stringByAppendingString:@"/Documents/preferences_kit/configuration.plist"];
-	if ([FCFileManager isFileItemAtPath:filename]) {
+	NSLog(@"ADDRESS\n\n%@\n\n", filename);
+	[FCFileManager removeItemAtPath:filename];
+	if ([FCFileManager isFileItemAtPath:filename] == NO) {
 		NSArray *tempdata = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"testpresdata" ofType:@"plist"]];
 		[FCFileManager writeFileAtPath:filename content:tempdata];
 	}
