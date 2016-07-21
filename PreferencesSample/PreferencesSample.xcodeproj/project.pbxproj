@@ -18,6 +18,7 @@
 		B619F4821D4066110021909F /* PreferencesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4811D4066110021909F /* PreferencesKit.m */; };
 		B619F4871D4078730021909F /* CustomSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F4851D4078730021909F /* CustomSettingsViewController.m */; };
 		B619F4881D4078730021909F /* CustomSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B619F4861D4078730021909F /* CustomSettingsViewController.xib */; };
+		B619F48B1D407AE80021909F /* PreferencesView.m in Sources */ = {isa = PBXBuildFile; fileRef = B619F48A1D407AE80021909F /* PreferencesView.m */; };
 		EC6AB0DC10181F0F78586019 /* libPods-PreferencesSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA28E194EC0290439D0E513 /* libPods-PreferencesSample.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		B619F4841D4078730021909F /* CustomSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSettingsViewController.h; sourceTree = "<group>"; };
 		B619F4851D4078730021909F /* CustomSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSettingsViewController.m; sourceTree = "<group>"; };
 		B619F4861D4078730021909F /* CustomSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSettingsViewController.xib; sourceTree = "<group>"; };
+		B619F4891D407AE80021909F /* PreferencesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesView.h; sourceTree = "<group>"; };
+		B619F48A1D407AE80021909F /* PreferencesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesView.m; sourceTree = "<group>"; };
 		C6F5BBF574F8376C47B61AA2 /* libPods-PreferencesSampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreferencesSampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED910FE920F11AF00BC712E9 /* libPods-PreferencesSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreferencesSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +190,8 @@
 			children = (
 				B619F4801D4066110021909F /* PreferencesKit.h */,
 				B619F4811D4066110021909F /* PreferencesKit.m */,
+				B619F4891D407AE80021909F /* PreferencesView.h */,
+				B619F48A1D407AE80021909F /* PreferencesView.m */,
 			);
 			name = PreferencesKit;
 			path = ../../PreferencesKit;
@@ -466,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B619F4821D4066110021909F /* PreferencesKit.m in Sources */,
+				B619F48B1D407AE80021909F /* PreferencesView.m in Sources */,
 				B619F4871D4078730021909F /* CustomSettingsViewController.m in Sources */,
 				B619F4511D4065380021909F /* AppDelegate.m in Sources */,
 				B619F44E1D4065380021909F /* main.m in Sources */,
