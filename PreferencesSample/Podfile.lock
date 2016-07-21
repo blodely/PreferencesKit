@@ -1,0 +1,12 @@
+PODS:
+  - FCFileManager (1.0.18)
+
+DEPENDENCIES:
+  - FCFileManager (~> 1.0.18)
+
+SPEC CHECKSUMS:
+  FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
+
+PODFILE CHECKSUM: d20c30c4a5fdeaab318caaccfc5fd04409b5c698
+
+COCOAPODS: 1.0.1
