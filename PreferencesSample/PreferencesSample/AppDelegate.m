@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FCFileManager.h"
 
 #import "CustomSettingsViewController.h"
 
@@ -19,6 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// OVERRIDE POINT FOR CUSTOMIZATION AFTER APPLICATION LAUNCH.
+	
+//------------------------------------------------------------------------------------
+	NSString *filename = [NSHomeDirectory() stringByAppendingString:@"/Documents/preferences_kit/configuration.plist"];
+	if ([FCFileManager isFileItemAtPath:filename]) {
+		NSArray *tempdata = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"testpresdata" ofType:@"plist"]];
+		[FCFileManager writeFileAtPath:filename content:tempdata];
+	}
+//------------------------------------------------------------------------------------
 	
 	_window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	
