@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PreferencesView.h"
 
 @interface CustomSettingsViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet PreferencesView *pvSettings;
 
 @end

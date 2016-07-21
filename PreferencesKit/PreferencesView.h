@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class PreferencesView;
+
+@protocol PreferencesViewDelegate <NSObject>
+
+@end
+
+
+IB_DESIGNABLE
 @interface PreferencesView : UIView
+
+@property (nonatomic, strong, nullable) NSArray *datasource;
+
+@property (nonatomic, weak, nullable) id <PreferencesViewDelegate> delegate;
+
+- (void)reloadData;
 
 @end

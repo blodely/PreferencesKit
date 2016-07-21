@@ -6,7 +6,18 @@
 		<key>PK_TITLE</key>
 		<string></string>
 		<key>PK_ITEM</key>
-		<array/>
+		<array>
+			<dict>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string>饱和度</string>
+				<key>subtitle</key>
+				<string>色彩调整</string>
+				<key>type</key>
+				<real>0.3</real>
+			</dict>
+		</array>
 	</dict>
 </array>
 </plist>
