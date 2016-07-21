@@ -11,18 +11,64 @@
 
 @implementation PKEntity
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithType:(PKEntityType)atype {
+	if (self = [super init]) {
+		_type = atype;
+	}
+	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
 	self = [super init];
 	if (self) {
-		self.name = [aDecoder decodeObjectForKey:@"self.name"];
-		self.type = (PKEntityType)[aDecoder decodeIntForKey:@"self.type"];
+		self.name = [coder decodeObjectForKey:@"self.name"];
+		self.title = [coder decodeObjectForKey:@"self.title"];
+		self.subtitle = [coder decodeObjectForKey:@"self.subtitle"];
+		_type = (PKEntityType) [coder decodeIntForKey:@"_type"];
+		
+		switch (_type) {
+			case PKEntityTypeBoolean:
+				self.valueBool = [coder decodeBoolForKey:@"self.value"];
+				break;
+			case PKEntityTypeSectionNumber:
+			case PKEntityTypeNumberDouble:
+				self.valueDouble = [coder decodeDoubleForKey:@"self.value"];
+				break;
+			case PKEntityTypeNumberInt:
+				self.valueInt = [coder decodeIntegerForKey:@"self.value"];
+				break;
+			case PKEntityTypeString:
+				self.value = [coder decodeObjectForKey:@"self.value"];
+				break;
+			default: break;
+		}
 	}
+
 	return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
 	[coder encodeObject:self.name forKey:@"self.name"];
-	[coder encodeInt:self.type forKey:@"self.type"];
+	[coder encodeObject:self.title forKey:@"self.title"];
+	[coder encodeObject:self.subtitle forKey:@"self.subtitle"];
+	[coder encodeInt:self.type forKey:@"_type"];
+	
+	switch (_type) {
+		case PKEntityTypeBoolean:
+			[coder encodeBool:self.valueBool forKey:@"self.value"];
+			break;
+		case PKEntityTypeSectionNumber:
+		case PKEntityTypeNumberDouble:
+			[coder encodeDouble:self.valueDouble forKey:@"self.value"];
+			break;
+		case PKEntityTypeNumberInt:
+			[coder encodeInteger:self.valueInt forKey:@"self.value"];
+			break;
+		case PKEntityTypeString:
+			[coder encodeObject:self.value forKey:@"self.value"];
+			break;
+		default: break;
+	}
 }
 
 - (id)copyWithZone:(NSZone *)zone {
@@ -30,7 +76,13 @@
 
 	if (copy != nil) {
 		copy.name = self.name;
-		copy.type = self.type;
+		copy.title = self.title;
+		copy.subtitle = self.subtitle;
+		copy->_type = _type;
+		copy.value = self.value;
+		copy.valueInt = self.valueInt;
+		copy.valueDouble = self.valueDouble;
+		copy.valueBool = self.valueBool;
 	}
 
 	return copy;

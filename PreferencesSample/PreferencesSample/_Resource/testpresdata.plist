@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>PK_TITLE</key>
-		<string></string>
+		<string>调整</string>
 		<key>PK_ITEM</key>
 		<array>
 			<dict>
@@ -15,7 +15,33 @@
 				<key>subtitle</key>
 				<string>色彩调整</string>
 				<key>type</key>
+				<integer>2</integer>
+				<key>value</key>
 				<real>0.3</real>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string>灰度</string>
+				<key>subtitle</key>
+				<string>色彩调整</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>value</key>
+				<real>0.4</real>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string>亮度</string>
+				<key>subtitle</key>
+				<string>色彩调整</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>value</key>
+				<real>0.5</real>
 			</dict>
 		</array>
 	</dict>

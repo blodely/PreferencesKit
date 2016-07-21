@@ -53,8 +53,24 @@ static PreferencesKit *sharedPreferencesKit;
 		NSArray *pkentitys = [FCFileManager readFileAtPathAsArray:filename];
 		
 		for (NSDictionary *one in pkentitys) {
-			PKEntity *entity = [PKEntity new];
-			entity.type = [one[@"type"] intValue];
+			PKEntity *entity = [[PKEntity alloc] initWithType:[one[@"type"] intValue]];
+			switch (entity.type) {
+				case PKEntityTypeBoolean:
+					entity.valueBool = [one[@"value"] boolValue];
+					break;
+				case PKEntityTypeNumberInt:
+					entity.valueInt = [one[@"value"] integerValue];
+					break;
+				case PKEntityTypeNumberDouble:
+				case PKEntityTypeSectionNumber:
+					entity.valueDouble = [one[@"value"] doubleValue];
+					break;
+				case PKEntityTypeString:
+					entity.value = [NSString stringWithFormat:@"%@", one[@"value"]];
+					break;
+				default:
+					break;
+			}
 			[ret addObject:entity];
 		}
 		
