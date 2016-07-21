@@ -1,7 +1,7 @@
 # PreferencesKit
 Preferences kit for iOS.
 
-Goal is read a configuration text-based file, then generate a user interface. And it response user interactions.
+Goal is to read a configuration text-based file, then generate a user interface from it. UI will response user interactions, and persist data into configuration file.
 
 :)
 
