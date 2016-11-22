@@ -1,0 +1,19 @@
+PODS:
+  - FCFileManager (1.0.18)
+  - PreferencesKit (1.0.0):
+    - FCFileManager (~> 1.0.18)
+
+DEPENDENCIES:
+  - PreferencesKit (from `../`)
+
+EXTERNAL SOURCES:
+  PreferencesKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
+  PreferencesKit: 53767f648794a7dcfd6a8e19d8aa1504ac61a514
+
+PODFILE CHECKSUM: dd78f4101ade7d9d91765c8e90f855209dedcc18
+
+COCOAPODS: 1.1.1
