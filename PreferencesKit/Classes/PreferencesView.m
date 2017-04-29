@@ -8,6 +8,14 @@
 
 #import "PreferencesView.h"
 #import "LYPreferencesKit.h"
+#import "PreferencesBaseCell.h"
+
+@interface PreferencesView () <UITableViewDelegate, UITableViewDataSource> {
+	
+	__weak UITableView *tbPreferences;
+	
+}
+@end
 
 @implementation PreferencesView
 
@@ -16,6 +24,11 @@
 		
 	}
 	return self;
+}
+
+- (void)initial {
+	
+	
 }
 
 /*
@@ -35,7 +48,22 @@
 #pragma mark - METHOD
 
 - (void)reloadData {
-	
+	[tbPreferences reloadData];
 }
+
+#pragma mark - DELEGATE
+
+#pragma mark | UITableViewDelegate
+
+#pragma mark | UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return nil;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [_datasource count];
+}
+
 
 @end

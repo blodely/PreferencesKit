@@ -11,27 +11,30 @@
 		11FFB25B46D7924D3B4118ABD0B93F0C /* FCFileManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D12A369F50E3C5C20557FBB381476A /* FCFileManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19D03DA426F73FA9211C23F7F797B8B4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775474C5764CFC395527CC7B09851436 /* ImageIO.framework */; };
 		1DA30EB6C4CDE434A91C55474468C759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA1848BE2DC2B91F72E19D328EFDE6 /* Foundation.framework */; };
-		2627D91E5BF61613243D33A469124D17 /* PreferencesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5BB7E214E699C34B22BAA96EE147A8 /* PreferencesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		247A0C348E1A381595067866A915BB2C /* PreferencesBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C86AA6E1E87E06234BAFD5F429ACA81D /* PreferencesBaseCell.m */; };
 		29E7A065DA6D7FCD5A64968F6372F527 /* FCFileManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F88BF2FED6DF8C706B530C58FB74AA /* FCFileManager-dummy.m */; };
 		2ADDB8F3AB94728A3E0ED78EB6863984 /* Pods-PreferencesKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341D0C07B270941D8D80E35E5D679DE /* Pods-PreferencesKit_Example-dummy.m */; };
-		31235B05A440C29C7C82129B24CC9F13 /* NSFileManager+PreferencesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D555E3AF3480C58771774CB8942C54C /* NSFileManager+PreferencesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31657CB624D2DEEE1DFF245EF5FF6BCB /* LYPreferencesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BD8609D98046A14CDD244C7EAB9ED4 /* LYPreferencesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3181BD053DA503314C8E09BBCB7AD2A8 /* FCFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E501DBDB478C47F2E1FDC257FD40D1A /* FCFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37C6A00DF6775EC313AB4C89EB9334F1 /* LYPreferencesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AF7CEB781F615CBE545684A820B35B /* LYPreferencesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CC289CE2A5E2CCCCC6B64B0DA83029 /* PKEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = B17A56E5087A727A1A8FBE6896F74895 /* PKEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C3C9C9B2FE5AC7F86F128608D922424 /* Pods-PreferencesKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA975A736EB6E7CD75F0A0EBCBB85B6 /* Pods-PreferencesKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46410370FE651CAD0BFBE0702FF454C9 /* NSFileManager+PreferencesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E279D8B4CBB13FA7D8041A0268425120 /* NSFileManager+PreferencesKit.m */; };
+		473F7DC74ECC89C99CC49E363CA29DE5 /* PreferencesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F7E5D25AE8A3B656DB86A518792398 /* PreferencesKit.m */; };
 		4741049DB656BB8E3B66BA8E27558EB1 /* Pods-PreferencesKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 989F282F9F1D40CA615A102A16AA0382 /* Pods-PreferencesKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5663EE9115EC3283EDA2E0A27EBCCE42 /* PreferencesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDF6A375BE54F60DA5DCB60A1519DF9 /* PreferencesKit.m */; };
-		62CCEB85360424EDDB9493B4557CA848 /* PKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A573BE1600ABBA3E45A1021AC749592B /* PKEntity.m */; };
+		61F0A61CBCB8BE519643A73C279A9E7F /* PreferencesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FD0479C27D7A22C81383320F2975842 /* PreferencesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640E3704AA9C30AFA68FF585C42711BB /* PreferencesBaseCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 54D8D4F19B711E0DE11CA67A7062D5AB /* PreferencesBaseCell.xib */; };
 		693836AD307487187B82521631439F76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59722553B65522F8D0354B9F132CE25C /* UIKit.framework */; };
-		6C3AA9B121FE246528394ED2FF6E4B3D /* PreferencesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 466364C09F37E07F677146619B211307 /* PreferencesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841503A91D5A6A8F3BA0702D8078E880 /* PreferencesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6046046077ABEE8021809D5292630A /* PreferencesKit-dummy.m */; };
 		862473B837C38D08184E42C0BB7D3049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA1848BE2DC2B91F72E19D328EFDE6 /* Foundation.framework */; };
-		98EE90F96321587727A681B7A6F17F61 /* PreferencesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6046046077ABEE8021809D5292630A /* PreferencesKit-dummy.m */; };
-		C1388D55D616A23ED02403BBC445A30C /* NSFileManager+PreferencesKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A865912120D805160E419BBD44ED0BEC /* NSFileManager+PreferencesKit.m */; };
-		C865F20C66B63FCBEAE98C5149733C94 /* PKEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5A13948CA553D1383DA12F092C69E2 /* PKEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C82F6E103FFF9FF5DD92A8531CA84B /* PreferencesBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C61ADCBB84BD2DB34557B9044AD70939 /* PreferencesBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BF7B6F82EB58377CE4F1C1A2A93224 /* PreferencesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBABC9EC827212FD0549467ED392BCA /* PreferencesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD54632BC742D5DAFD6C80D1D54168BF /* PreferencesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7090CC62FC41650261FC6C5DD6170087 /* PreferencesView.m */; };
+		BFBD1796DE7B3E0B73379A784113B874 /* PreferencesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FFFEF66551AD2F98363ADBF9BBEBD2B /* PreferencesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFCE1DCE640916066713781AE66C69F6 /* PKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A174C63A4C35720DE094DA433037BE03 /* PKEntity.m */; };
 		CA2B2011AF6017DF95B2FF4CC759126E /* FCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA8F4A42B04A537456FAD9EE3F132D /* FCFileManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		CB0AFBD1731F51456B0E6DFAB6DCECBF /* Pods-PreferencesKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE10A01298A4F192D340685E7AAD4B8 /* Pods-PreferencesKit_Tests-dummy.m */; };
 		D4BDDD3C04C17AFFF0290E357F0A6DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA1848BE2DC2B91F72E19D328EFDE6 /* Foundation.framework */; };
-		F2420788A0BA44572C3F0BB9662C5435 /* PreferencesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BA203B4CE788FC093E195A355981A /* PreferencesView.m */; };
-		F335AE8F709E5E41371DF146BF40C283 /* PreferencesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FFFEF66551AD2F98363ADBF9BBEBD2B /* PreferencesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA7B54B7A8B56C55F5532737F4E1062 /* NSFileManager+PreferencesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F2EBC8EDEFF9BDCF48D5300AA16F6C /* NSFileManager+PreferencesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE43CA1C410FD5D858B0A47B2577B8C3 /* FCFileManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E949E0498536828E769515B72C39F0A /* FCFileManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,27 +67,26 @@
 		0341D0C07B270941D8D80E35E5D679DE /* Pods-PreferencesKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PreferencesKit_Example-dummy.m"; sourceTree = "<group>"; };
 		09EA43294A3BC92F83DA2A95F71D1049 /* PreferencesKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PreferencesKit.modulemap; sourceTree = "<group>"; };
 		0C1BB05E1DF05F30E76C040E41498302 /* Pods-PreferencesKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PreferencesKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0E5BB7E214E699C34B22BAA96EE147A8 /* PreferencesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PreferencesKit.h; sourceTree = "<group>"; };
 		0EE2D523E37C4E7242EB95812CB8735D /* FCFileManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCFileManager-prefix.pch"; sourceTree = "<group>"; };
 		0FFFEF66551AD2F98363ADBF9BBEBD2B /* PreferencesKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PreferencesKit-umbrella.h"; sourceTree = "<group>"; };
 		113790D18794017FC54F3A3A7BD3B8D4 /* PreferencesKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PreferencesKit-prefix.pch"; sourceTree = "<group>"; };
-		1C5A13948CA553D1383DA12F092C69E2 /* PKEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PKEntity.h; sourceTree = "<group>"; };
+		14F2EBC8EDEFF9BDCF48D5300AA16F6C /* NSFileManager+PreferencesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PreferencesKit.h"; sourceTree = "<group>"; };
 		1DCCEAABD8B87A35E32D4F95F827B465 /* Pods_PreferencesKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PreferencesKit_Example.framework; path = "Pods-PreferencesKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E949E0498536828E769515B72C39F0A /* FCFileManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCFileManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5A74691266F1146AA2F8D7D02DDC23 /* Pods-PreferencesKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PreferencesKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2FD0479C27D7A22C81383320F2975842 /* PreferencesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PreferencesKit.h; sourceTree = "<group>"; };
 		353026AE3679B1FD598AD2791C6266EA /* Pods-PreferencesKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PreferencesKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CBABC9EC827212FD0549467ED392BCA /* PreferencesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PreferencesView.h; sourceTree = "<group>"; };
 		3CC7618598DF981362D55B67821AEDFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B84B51D01CDC6362115F7683CE5F6C /* FCFileManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FCFileManager.xcconfig; sourceTree = "<group>"; };
-		466364C09F37E07F677146619B211307 /* PreferencesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PreferencesView.h; sourceTree = "<group>"; };
 		49717DF2209E36861537DBB8A7259A00 /* FCFileManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FCFileManager.modulemap; sourceTree = "<group>"; };
 		4CAEE07C7FA7156EDB1FCAA283F69C39 /* Pods_PreferencesKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PreferencesKit_Tests.framework; path = "Pods-PreferencesKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A8B6F74CBD4227AFCAA2B16C3308B7 /* Pods-PreferencesKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PreferencesKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		54D8D4F19B711E0DE11CA67A7062D5AB /* PreferencesBaseCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesBaseCell.xib; sourceTree = "<group>"; };
 		59722553B65522F8D0354B9F132CE25C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5FA975A736EB6E7CD75F0A0EBCBB85B6 /* Pods-PreferencesKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PreferencesKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		677BA203B4CE788FC093E195A355981A /* PreferencesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PreferencesView.m; sourceTree = "<group>"; };
 		6CD0B7BF7AB8D981F64A43FB03FCC204 /* Pods-PreferencesKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PreferencesKit_Example-resources.sh"; sourceTree = "<group>"; };
-		6D555E3AF3480C58771774CB8942C54C /* NSFileManager+PreferencesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PreferencesKit.h"; sourceTree = "<group>"; };
-		73AF7CEB781F615CBE545684A820B35B /* LYPreferencesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYPreferencesKit.h; sourceTree = "<group>"; };
+		7090CC62FC41650261FC6C5DD6170087 /* PreferencesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PreferencesView.m; sourceTree = "<group>"; };
 		75EA8F4A42B04A537456FAD9EE3F132D /* FCFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCFileManager.m; path = FCFileManager/FCFileManager.m; sourceTree = "<group>"; };
 		7687C43A752A5B0C3B1A79E8327725C9 /* Pods-PreferencesKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PreferencesKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76B40399099FC3DF9230FA07AB37A744 /* Pods-PreferencesKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PreferencesKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,19 +101,23 @@
 		9632FFB0993145934A252B9CDC81C0E7 /* Pods-PreferencesKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PreferencesKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		989F282F9F1D40CA615A102A16AA0382 /* Pods-PreferencesKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PreferencesKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		9A64EAD99D65CECB86212639FB727FFF /* FCFileManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FCFileManager.framework; path = FCFileManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A573BE1600ABBA3E45A1021AC749592B /* PKEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PKEntity.m; sourceTree = "<group>"; };
-		A865912120D805160E419BBD44ED0BEC /* NSFileManager+PreferencesKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PreferencesKit.m"; sourceTree = "<group>"; };
+		A174C63A4C35720DE094DA433037BE03 /* PKEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PKEntity.m; sourceTree = "<group>"; };
+		A3BD8609D98046A14CDD244C7EAB9ED4 /* LYPreferencesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYPreferencesKit.h; sourceTree = "<group>"; };
 		ABF5D947D35D1DBDB0A7A9A6AD103C3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACDF6A375BE54F60DA5DCB60A1519DF9 /* PreferencesKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PreferencesKit.m; sourceTree = "<group>"; };
+		B17A56E5087A727A1A8FBE6896F74895 /* PKEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PKEntity.h; sourceTree = "<group>"; };
 		C084D39EB16CCE465D4F35437366B50E /* PreferencesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PreferencesKit.framework; path = PreferencesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D12A369F50E3C5C20557FBB381476A /* FCFileManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCFileManager-umbrella.h"; sourceTree = "<group>"; };
 		C1D90633734F515F2C8B82091C835740 /* Pods-PreferencesKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PreferencesKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C61ADCBB84BD2DB34557B9044AD70939 /* PreferencesBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PreferencesBaseCell.h; sourceTree = "<group>"; };
 		C7F88BF2FED6DF8C706B530C58FB74AA /* FCFileManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FCFileManager-dummy.m"; sourceTree = "<group>"; };
+		C86AA6E1E87E06234BAFD5F429ACA81D /* PreferencesBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PreferencesBaseCell.m; sourceTree = "<group>"; };
 		CB6046046077ABEE8021809D5292630A /* PreferencesKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PreferencesKit-dummy.m"; sourceTree = "<group>"; };
 		CF78853A7C0F3932115152A89C7E8DA5 /* PreferencesKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PreferencesKit.xcconfig; sourceTree = "<group>"; };
 		D12D07BBFC9A8669BCB7709110A2ADC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1FAD2176273FDC5E8229AF610EFEBBB /* Pods-PreferencesKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PreferencesKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E279D8B4CBB13FA7D8041A0268425120 /* NSFileManager+PreferencesKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PreferencesKit.m"; sourceTree = "<group>"; };
 		F5AA1848BE2DC2B91F72E19D328EFDE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F9F7E5D25AE8A3B656DB86A518792398 /* PreferencesKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PreferencesKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,24 @@
 			path = "../Target Support Files/FCFileManager";
 			sourceTree = "<group>";
 		};
+		1FAD7D9F95648CF290E3A23DD9E8862E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A3BD8609D98046A14CDD244C7EAB9ED4 /* LYPreferencesKit.h */,
+				14F2EBC8EDEFF9BDCF48D5300AA16F6C /* NSFileManager+PreferencesKit.h */,
+				E279D8B4CBB13FA7D8041A0268425120 /* NSFileManager+PreferencesKit.m */,
+				B17A56E5087A727A1A8FBE6896F74895 /* PKEntity.h */,
+				A174C63A4C35720DE094DA433037BE03 /* PKEntity.m */,
+				2FD0479C27D7A22C81383320F2975842 /* PreferencesKit.h */,
+				F9F7E5D25AE8A3B656DB86A518792398 /* PreferencesKit.m */,
+				3CBABC9EC827212FD0549467ED392BCA /* PreferencesView.h */,
+				7090CC62FC41650261FC6C5DD6170087 /* PreferencesView.m */,
+				B9B89ECDFF0D793550E8F71E03714919 /* cell */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2B23BA2C1D0CAE5E7548BC3D626B154D /* Pods-PreferencesKit_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,32 +221,6 @@
 			);
 			name = "Pods-PreferencesKit_Example";
 			path = "Target Support Files/Pods-PreferencesKit_Example";
-			sourceTree = "<group>";
-		};
-		3D98AB4AF55F1E2702BC48EDE306BE56 /* PreferencesKit */ = {
-			isa = PBXGroup;
-			children = (
-				577D824B99C71AD2979CCAD609580EB9 /* Classes */,
-			);
-			name = PreferencesKit;
-			path = PreferencesKit;
-			sourceTree = "<group>";
-		};
-		577D824B99C71AD2979CCAD609580EB9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				73AF7CEB781F615CBE545684A820B35B /* LYPreferencesKit.h */,
-				6D555E3AF3480C58771774CB8942C54C /* NSFileManager+PreferencesKit.h */,
-				A865912120D805160E419BBD44ED0BEC /* NSFileManager+PreferencesKit.m */,
-				1C5A13948CA553D1383DA12F092C69E2 /* PKEntity.h */,
-				A573BE1600ABBA3E45A1021AC749592B /* PKEntity.m */,
-				0E5BB7E214E699C34B22BAA96EE147A8 /* PreferencesKit.h */,
-				ACDF6A375BE54F60DA5DCB60A1519DF9 /* PreferencesKit.m */,
-				466364C09F37E07F677146619B211307 /* PreferencesView.h */,
-				677BA203B4CE788FC093E195A355981A /* PreferencesView.m */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		659231ADE3206B6AB2BA93B97A9C88D1 /* Frameworks */ = {
@@ -284,14 +282,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		B9B89ECDFF0D793550E8F71E03714919 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C61ADCBB84BD2DB34557B9044AD70939 /* PreferencesBaseCell.h */,
+				C86AA6E1E87E06234BAFD5F429ACA81D /* PreferencesBaseCell.m */,
+				54D8D4F19B711E0DE11CA67A7062D5AB /* PreferencesBaseCell.xib */,
+			);
+			name = cell;
+			path = cell;
+			sourceTree = "<group>";
+		};
 		BC2B010228BDCF6FAFF982E34BA5C7C3 /* PreferencesKit */ = {
 			isa = PBXGroup;
 			children = (
-				3D98AB4AF55F1E2702BC48EDE306BE56 /* PreferencesKit */,
+				C7D1F42D4A915D4720E05B03D7B94167 /* PreferencesKit */,
 				03620A816DB66A07C6F2F7F93E45B8F8 /* Support Files */,
 			);
 			name = PreferencesKit;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		C7D1F42D4A915D4720E05B03D7B94167 /* PreferencesKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FAD7D9F95648CF290E3A23DD9E8862E /* Classes */,
+			);
+			name = PreferencesKit;
+			path = PreferencesKit;
 			sourceTree = "<group>";
 		};
 		D85840A0F2279E553E74272D95200C46 /* Development Pods */ = {
@@ -342,16 +360,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		914AC53071E9D0D8924A14675D1FCBAB /* Headers */ = {
+		9EAD2AC90E9A07170EBF2F71A9927652 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C6A00DF6775EC313AB4C89EB9334F1 /* LYPreferencesKit.h in Headers */,
-				31235B05A440C29C7C82129B24CC9F13 /* NSFileManager+PreferencesKit.h in Headers */,
-				C865F20C66B63FCBEAE98C5149733C94 /* PKEntity.h in Headers */,
-				F335AE8F709E5E41371DF146BF40C283 /* PreferencesKit-umbrella.h in Headers */,
-				2627D91E5BF61613243D33A469124D17 /* PreferencesKit.h in Headers */,
-				6C3AA9B121FE246528394ED2FF6E4B3D /* PreferencesView.h in Headers */,
+				31657CB624D2DEEE1DFF245EF5FF6BCB /* LYPreferencesKit.h in Headers */,
+				DFA7B54B7A8B56C55F5532737F4E1062 /* NSFileManager+PreferencesKit.h in Headers */,
+				32CC289CE2A5E2CCCCC6B64B0DA83029 /* PKEntity.h in Headers */,
+				A4C82F6E103FFF9FF5DD92A8531CA84B /* PreferencesBaseCell.h in Headers */,
+				BFBD1796DE7B3E0B73379A784113B874 /* PreferencesKit-umbrella.h in Headers */,
+				61F0A61CBCB8BE519643A73C279A9E7F /* PreferencesKit.h in Headers */,
+				B9BF7B6F82EB58377CE4F1C1A2A93224 /* PreferencesView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +398,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C92118B608E8835AF982C9154DE3437 /* Build configuration list for PBXNativeTarget "PreferencesKit" */;
 			buildPhases = (
-				B82887F4C7FCDCEC24E51ABCFF76D2CA /* Sources */,
+				9BFE0FBED7F47E8BF2BB904CE513C36D /* Sources */,
 				0522DB336AA7D3DCA46DCB2751410095 /* Frameworks */,
-				914AC53071E9D0D8924A14675D1FCBAB /* Headers */,
+				9EAD2AC90E9A07170EBF2F71A9927652 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -492,15 +511,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B82887F4C7FCDCEC24E51ABCFF76D2CA /* Sources */ = {
+		9BFE0FBED7F47E8BF2BB904CE513C36D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1388D55D616A23ED02403BBC445A30C /* NSFileManager+PreferencesKit.m in Sources */,
-				62CCEB85360424EDDB9493B4557CA848 /* PKEntity.m in Sources */,
-				98EE90F96321587727A681B7A6F17F61 /* PreferencesKit-dummy.m in Sources */,
-				5663EE9115EC3283EDA2E0A27EBCCE42 /* PreferencesKit.m in Sources */,
-				F2420788A0BA44572C3F0BB9662C5435 /* PreferencesView.m in Sources */,
+				46410370FE651CAD0BFBE0702FF454C9 /* NSFileManager+PreferencesKit.m in Sources */,
+				BFCE1DCE640916066713781AE66C69F6 /* PKEntity.m in Sources */,
+				247A0C348E1A381595067866A915BB2C /* PreferencesBaseCell.m in Sources */,
+				640E3704AA9C30AFA68FF585C42711BB /* PreferencesBaseCell.xib in Sources */,
+				841503A91D5A6A8F3BA0702D8078E880 /* PreferencesKit-dummy.m in Sources */,
+				473F7DC74ECC89C99CC49E363CA29DE5 /* PreferencesKit.m in Sources */,
+				BD54632BC742D5DAFD6C80D1D54168BF /* PreferencesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

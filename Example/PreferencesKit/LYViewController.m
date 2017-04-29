@@ -7,6 +7,7 @@
 //
 
 #import "LYViewController.h"
+#import <PreferencesKit/LYPreferencesKit.h>
 
 @interface LYViewController ()
 
@@ -14,16 +15,14 @@
 
 @implementation LYViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW, TYPICALLY FROM A NIB.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)didReceiveMemoryWarning {
+	[super didReceiveMemoryWarning];
+	// DISPOSE OF ANY RESOURCES THAT CAN BE RECREATED.
 }
 
 @end

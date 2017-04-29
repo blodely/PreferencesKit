@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "PreferencesBaseCell.h"
 #import "LYPreferencesKit.h"
 #import "NSFileManager+PreferencesKit.h"
 #import "PKEntity.h"

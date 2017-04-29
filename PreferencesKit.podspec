@@ -21,7 +21,7 @@ Using plist configuration file to set and auto generate preferences view.
 
 	s.ios.deployment_target = '8.0'
 
-	s.source_files = 'PreferencesKit/Classes/**/*'
+	s.source_files = 'PreferencesKit/Classes/**/*', 'PreferencesKit/Classes/cell/*'
 
 	# s.resource_bundles = {
 	#   'PreferencesKit' => ['PreferencesKit/Assets/*.png']
