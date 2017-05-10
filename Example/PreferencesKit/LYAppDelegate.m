@@ -17,7 +17,7 @@
 	// OVERRIDE POINT FOR CUSTOMIZATION AFTER APPLICATION LAUNCH.
 	
 	//------------------------------------------------------------------------------------
-	NSString *filename = [NSHomeDirectory() stringByAppendingString:@"/Documents/preferences_kit/configuration.plist"];
+	NSString *filename = [NSHomeDirectory() stringByAppendingString:@"/Documents/ly.preferences.kit/preferences.kit.plis"];
 	NSLog(@"ADDRESS\n\n%@\n\n", filename);
 	[FCFileManager removeItemAtPath:filename];
 	if ([FCFileManager isFileItemAtPath:filename] == NO) {

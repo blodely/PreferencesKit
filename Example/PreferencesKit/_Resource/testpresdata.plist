@@ -3,44 +3,44 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>PK_TITLE</key>
+		<key>pk.section.title</key>
 		<string>调整</string>
-		<key>PK_ITEM</key>
+		<key>pk.section.items</key>
 		<array>
 			<dict>
-				<key>name</key>
+				<key>pk.entity.name</key>
 				<string></string>
-				<key>title</key>
+				<key>pk.entity.title</key>
 				<string>饱和度</string>
-				<key>subtitle</key>
+				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
-				<key>type</key>
+				<key>pk.entity.type</key>
 				<integer>2</integer>
-				<key>value</key>
+				<key>pk.entity.value</key>
 				<real>0.3</real>
 			</dict>
 			<dict>
-				<key>name</key>
+				<key>pk.entity.name</key>
 				<string></string>
-				<key>title</key>
+				<key>pk.entity.title</key>
 				<string>灰度</string>
-				<key>subtitle</key>
+				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
-				<key>type</key>
+				<key>pk.entity.type</key>
 				<integer>2</integer>
-				<key>value</key>
+				<key>pk.entity.value</key>
 				<real>0.4</real>
 			</dict>
 			<dict>
-				<key>name</key>
+				<key>pk.entity.name</key>
 				<string></string>
-				<key>title</key>
+				<key>pk.entity.title</key>
 				<string>亮度</string>
-				<key>subtitle</key>
+				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
-				<key>type</key>
+				<key>pk.entity.type</key>
 				<integer>2</integer>
-				<key>value</key>
+				<key>pk.entity.value</key>
 				<real>0.5</real>
 			</dict>
 		</array>
