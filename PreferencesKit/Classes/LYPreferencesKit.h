@@ -22,7 +22,4 @@
 
 #import <FCFileManager/FCFileManager.h>
 
-//#import "FCFileManager.h"
-//#import "NSFileManager+PreferencesKit.h"
-
 #endif /* LYPreferencesKit_h */
