@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
-	self.pvSettings.datasource = [[PreferencesKit kit] configurations];
+	self.pvSettings.datasource = [NSFileManager preferencesReader];
 	[self.pvSettings reloadData];
 }
 
