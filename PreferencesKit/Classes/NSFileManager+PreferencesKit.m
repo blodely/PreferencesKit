@@ -42,7 +42,7 @@
 		
 		NSMutableArray *secSettings = [NSMutableArray arrayWithCapacity:1];
 		
-		for (NSDictionary *one in reader) {
+		for (NSDictionary *one in section[PK_SECTION_ITEMS]) {
 			
 			PKEntityType type = PKEntityTypeNone;
 			

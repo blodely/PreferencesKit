@@ -97,5 +97,13 @@ NSString *const PK_ENTITY_VALUE = @"pk.entity.value";
 	return copy;
 }
 
+- (NSString *)description {
+	return [NSString stringWithFormat:@"PKEntity {\n\tName=%@\n\tTitle=%@\n\tSubtitle=%@\n\tType=%@\n}",
+			_name,
+			_title,
+			_subtitle,
+			@(_type)
+			];
+}
 
 @end
