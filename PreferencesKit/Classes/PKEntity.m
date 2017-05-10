@@ -9,6 +9,9 @@
 #import "PKEntity.h"
 #import "LYPreferencesKit.h"
 
+NSString *const PK_SECTION_TITLE = @"pk.section.title";
+NSString *const PK_SECTION_ITEMS = @"pk.section.items";
+
 NSString *const PK_ENTITY_NAME = @"pk.entity.name";
 NSString *const PK_ENTITY_TYPE = @"pk.entity.type";
 NSString *const PK_ENTITY_TITLE = @"pk.entity.title";
