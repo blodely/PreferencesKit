@@ -38,50 +38,60 @@
 	
 	NSMutableArray *settings = [NSMutableArray arrayWithCapacity:1];
 	
-	for (NSDictionary *one in reader) {
+	for (NSDictionary *section in reader) {
 		
-		PKEntityType type = PKEntityTypeNone;
+		NSMutableArray *secSettings = [NSMutableArray arrayWithCapacity:1];
 		
-		type = [one[PK_ENTITY_TYPE] integerValue];
-		
-		PKEntity *entity = [[PKEntity alloc] initWithType:type];
-		
-		entity.name = [NSString stringWithFormat:@"%@", one[PK_ENTITY_NAME]];
-		entity.title = [NSString stringWithFormat:@"%@", one[PK_ENTITY_TITLE]];
-		entity.subtitle = [NSString stringWithFormat:@"%@", one[PK_ENTITY_SUBTITLE]];
-		
-		switch (type) {
-			case PKEntityTypeNone: {
-				entity.value = nil;
+		for (NSDictionary *one in reader) {
+			
+			PKEntityType type = PKEntityTypeNone;
+			
+			type = [one[PK_ENTITY_TYPE] integerValue];
+			
+			PKEntity *entity = [[PKEntity alloc] initWithType:type];
+			
+			entity.name = [NSString stringWithFormat:@"%@", one[PK_ENTITY_NAME]];
+			entity.title = [NSString stringWithFormat:@"%@", one[PK_ENTITY_TITLE]];
+			entity.subtitle = [NSString stringWithFormat:@"%@", one[PK_ENTITY_SUBTITLE]];
+			
+			switch (type) {
+				case PKEntityTypeNone: {
+					entity.value = nil;
+				}
+					break;
+				case PKEntityTypeBoolean: {
+					entity.valueBool = [one[PK_ENTITY_VALUE] boolValue];
+				}
+					break;
+				case PKEntityTypeSectionNumber: {
+					
+				}
+					break;
+				case PKEntityTypeNumberInt: {
+					entity.valueInt = [one[PK_ENTITY_VALUE] integerValue];
+				}
+					break;
+				case PKEntityTypeNumberDouble: {
+					entity.valueDouble = [one[PK_ENTITY_VALUE] doubleValue];
+				}
+					break;
+				case PKEntityTypeString: {
+					entity.value = [NSString stringWithFormat:@"%@", one[PK_ENTITY_VALUE]];
+				}
+					break;
+				default: {
+					entity.value = one[PK_ENTITY_VALUE];
+				}
+					break;
 			}
-				break;
-			case PKEntityTypeBoolean: {
-				entity.valueBool = [one[PK_ENTITY_VALUE] boolValue];
-			}
-				break;
-			case PKEntityTypeSectionNumber: {
-				
-			}
-				break;
-			case PKEntityTypeNumberInt: {
-				entity.valueInt = [one[PK_ENTITY_VALUE] integerValue];
-			}
-				break;
-			case PKEntityTypeNumberDouble: {
-				entity.valueDouble = [one[PK_ENTITY_VALUE] doubleValue];
-			}
-				break;
-			case PKEntityTypeString: {
-				entity.value = [NSString stringWithFormat:@"%@", one[PK_ENTITY_VALUE]];
-			}
-				break;
-			default: {
-				entity.value = one[PK_ENTITY_VALUE];
-			}
-				break;
+			
+			[secSettings addObject:entity];
 		}
 		
-		[settings addObject:entity];
+		[settings addObject:@{
+							  PK_SECTION_TITLE:section[PK_SECTION_TITLE],
+							  PK_SECTION_ITEMS: [secSettings count] > 0 ? [NSArray arrayWithArray:secSettings] : @[],
+							  }];
 	}
 	
 	if ([settings count] > 0) {
