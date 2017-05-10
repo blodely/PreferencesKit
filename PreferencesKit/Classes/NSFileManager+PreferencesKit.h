@@ -10,4 +10,6 @@
 
 @interface NSFileManager (PreferencesKit)
 
++ (NSArray *)preferencesReader;
+
 @end
