@@ -30,6 +30,11 @@ Using plist configuration file to set and auto generate preferences view.
 	# s.public_header_files = 'Pod/Classes/**/*.h'
 	# s.frameworks = 'UIKit', 'MapKit'
 
+	s.ios.frameworks = 'UIKit'
+
+	s.libraries = 'xml2'
+
 	s.dependency 'FCFileManager', '~> 1.0.18'
+	s.dependency 'GDataXML-HTML'
 
 end

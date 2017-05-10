@@ -7,6 +7,8 @@
 //
 
 #import "NSFileManager+PreferencesKit.h"
+#import <FCFileManager/FCFileManager.h>
+//#import <GDataXML_HTML/GDataXMLNode.h>
 
 @implementation NSFileManager (PreferencesKit)
 

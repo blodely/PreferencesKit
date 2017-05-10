@@ -1,7 +1,9 @@
 PODS:
   - FCFileManager (1.0.18)
+  - GDataXML-HTML (1.3.0)
   - PreferencesKit (1.0.1):
     - FCFileManager (~> 1.0.18)
+    - GDataXML-HTML
 
 DEPENDENCIES:
   - PreferencesKit (from `../`)
@@ -12,7 +14,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
-  PreferencesKit: 4b188aeb2d7148ba0b099056825f44dd717f54f4
+  GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
+  PreferencesKit: 45d8cbfaefac5d86f7a2b3a943f16ed3c8751fd0
 
 PODFILE CHECKSUM: 4bcdb980146e18eac2ad921aba3ea65cd9933f41
 
