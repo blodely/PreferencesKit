@@ -27,6 +27,12 @@ typedef NS_ENUM(NSInteger,  PKEntityType) {
 	PKEntityTypeString = 11,
 };
 
+FOUNDATION_EXPORT NSString *const PK_ENTITY_NAME;
+FOUNDATION_EXPORT NSString *const PK_ENTITY_TYPE;
+FOUNDATION_EXPORT NSString *const PK_ENTITY_TITLE;
+FOUNDATION_EXPORT NSString *const PK_ENTITY_SUBTITLE;
+FOUNDATION_EXPORT NSString *const PK_ENTITY_VALUE;
+
 @interface PKEntity : NSObject <NSCoding, NSCopying>
 
 /**

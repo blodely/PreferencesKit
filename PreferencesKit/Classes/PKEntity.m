@@ -9,6 +9,12 @@
 #import "PKEntity.h"
 #import "LYPreferencesKit.h"
 
+NSString *const PK_ENTITY_NAME = @"pk.entity.name";
+NSString *const PK_ENTITY_TYPE = @"pk.entity.type";
+NSString *const PK_ENTITY_TITLE = @"pk.entity.title";
+NSString *const PK_ENTITY_SUBTITLE = @"pk.entity.subtitle";
+NSString *const PK_ENTITY_VALUE = @"pk.entity.value";
+
 @implementation PKEntity
 
 - (instancetype)initWithType:(PKEntityType)atype {
