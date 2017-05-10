@@ -1,6 +1,6 @@
 PODS:
   - FCFileManager (1.0.18)
-  - PreferencesKit (1.0.0):
+  - PreferencesKit (1.0.1):
     - FCFileManager (~> 1.0.18)
 
 DEPENDENCIES:
@@ -12,8 +12,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
-  PreferencesKit: 071670c302c7ad9b9c12b6e4a4fd0646586f0b9c
+  PreferencesKit: 4b188aeb2d7148ba0b099056825f44dd717f54f4
 
-PODFILE CHECKSUM: 110fe63aa232c98e3cfa8a07055996fd3931da93
+PODFILE CHECKSUM: 4bcdb980146e18eac2ad921aba3ea65cd9933f41
 
 COCOAPODS: 1.2.1
