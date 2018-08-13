@@ -12,4 +12,6 @@ FOUNDATION_EXPORT NSString *const PreferencesBaseCellIdentifier;
 
 @interface PreferencesBaseCell : UITableViewCell
 
+@property (weak, nonatomic) UILabel *lblTitle;
+
 @end

@@ -37,54 +37,7 @@ static PreferencesKit *sharedPreferencesKit;
 
 #pragma mark - FILE READ
 
-- (NSArray *)configurations {
-	
-	NSString *folder = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/preferences_kit/"];
-	NSString *filename = [folder stringByAppendingFormat:@"configuration.plist"];
-	
-	if ([FCFileManager isDirectoryItemAtPath:folder] == NO) {
-		// CREATE FOLDER
-		[FCFileManager createDirectoriesForPath:folder];
-	}
-	
-	if ([FCFileManager isFileItemAtPath:filename]) {
-		NSMutableArray *ret = [NSMutableArray arrayWithCapacity:1];
-		
-		NSArray *pkentitys = [FCFileManager readFileAtPathAsArray:filename];
-		
-		for (NSDictionary *one in pkentitys) {
-			PKEntity *entity = [[PKEntity alloc] initWithType:[one[@"type"] intValue]];
-			switch (entity.type) {
-				case PKEntityTypeBoolean:
-					entity.valueBool = [one[@"value"] boolValue];
-					break;
-				case PKEntityTypeNumberInt:
-					entity.valueInt = [one[@"value"] integerValue];
-					break;
-				case PKEntityTypeNumberDouble:
-				case PKEntityTypeSectionNumber:
-					entity.valueDouble = [one[@"value"] doubleValue];
-					break;
-				case PKEntityTypeString:
-					entity.value = [NSString stringWithFormat:@"%@", one[@"value"]];
-					break;
-				default:
-					break;
-			}
-			[ret addObject:entity];
-		}
-		
-		if ([ret count] > 0) {
-			return [NSArray arrayWithArray:ret];
-		}
-		
-		return nil;
-	} else {
-		NSLog(@"CONFIGURATION FILE NOT FOUND");
-	}
-	
-	return nil;
-}
+// IN NSFileManager+PreferencesKit
 
 #pragma mark | FILE WRITE
 

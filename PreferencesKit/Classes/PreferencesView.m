@@ -9,6 +9,7 @@
 #import "PreferencesView.h"
 #import "PreferencesBaseCell.h"
 #import "PKEntity.h"
+#import <Masonry/Masonry.h>
 
 @interface PreferencesView () <UITableViewDelegate, UITableViewDataSource> {
 	
@@ -39,13 +40,20 @@
 	
 	{
 		UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-		tableview.frame = CGRectZero;
 		tableview.delegate = self;
 		tableview.dataSource = self;
 		[self addSubview:tableview];
 		tbPreferences = tableview;
 		
-		[tbPreferences registerNib:[UINib nibWithNibName:@"PreferencesBaseCell" bundle:[NSBundle bundleWithPath:@""]] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
+		UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 0);
+		[tbPreferences mas_makeConstraints:^(MASConstraintMaker *make) {
+			make.edges.equalTo(self).with.insets(padding);
+		}];
+		
+		tbPreferences.separatorStyle = UITableViewCellSeparatorStyleNone;
+		
+		[tbPreferences registerClass:[PreferencesBaseCell class] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
+//		[tbPreferences registerNib:[UINib nibWithNibName:@"PreferencesBaseCell" bundle:[NSBundle bundleWithPath:@""]] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
 	}
 }
 
@@ -56,6 +64,12 @@
 	// DRAWING CODE
 }
 */
+
+- (void)setFrame:(CGRect)frame {
+	[super setFrame:frame];
+	
+	tbPreferences.frame = (CGRect){0, 0, frame.size.width, frame.size.height};
+}
 
 #pragma mark - PROPERTY
 
@@ -73,10 +87,19 @@
 
 #pragma mark | UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)idp {
+	[tableView deselectRowAtIndexPath:idp animated:YES];
+}
+
 #pragma mark | UITableViewDataSource
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return nil;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
+	
+	__weak PKEntity *item = _datasource[idp.section][PK_SECTION_ITEMS][idp.row];
+	
+	PreferencesBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBaseCellIdentifier forIndexPath:idp];
+	cell.lblTitle.text = item.title;
+	return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

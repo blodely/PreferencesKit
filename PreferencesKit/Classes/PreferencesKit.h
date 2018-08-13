@@ -23,11 +23,4 @@ FOUNDATION_EXPORT NSString *const PK_ITEM;
  */
 + (instancetype)kit;
 
-/**
- *  Configuration file reader
- *
- *  @return NSArray of objects, grouped.
- */
-- (NSArray *)configurations;
-
 @end

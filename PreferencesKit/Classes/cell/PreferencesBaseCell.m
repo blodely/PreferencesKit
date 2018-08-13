@@ -7,6 +7,7 @@
 //
 
 #import "PreferencesBaseCell.h"
+#import <Masonry/Masonry.h>
 
 NSString *const PreferencesBaseCellIdentifier = @"PreferencesBaseCellIdentifier";
 
@@ -21,6 +22,26 @@ NSString *const PreferencesBaseCellIdentifier = @"PreferencesBaseCellIdentifier"
     [super setSelected:selected animated:animated];
 
 	// CONFIGURE THE VIEW FOR THE SELECTED STATE
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+		
+		{
+			UILabel *label = [[UILabel alloc] init];
+			label.frame = (CGRect){10, 2, 200, 20};
+			[self addSubview:label];
+			_lblTitle = label;
+			
+			UIEdgeInsets padding = UIEdgeInsetsMake(12, 12, 12, 12);
+			[_lblTitle mas_makeConstraints:^(MASConstraintMaker *make) {
+				make.height.mas_equalTo(20);
+				make.edges.equalTo(self).with.insets(padding);
+			}];
+		}
+		
+	}
+	return self;
 }
 
 @end
