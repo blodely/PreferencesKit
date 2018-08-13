@@ -19,7 +19,7 @@ Using plist configuration file to set and auto generate preferences view.
 
 	s.social_media_url = 'https://weibo.com/blodely'
 
-	s.ios.deployment_target = '8.0'
+	s.ios.deployment_target = '9.0'
 
 	s.source_files = 'PreferencesKit/Classes/**/*', 'PreferencesKit/Classes/cell/*'
 

@@ -7,7 +7,7 @@
 //
 
 #import "CustomSettingsViewController.h"
-#import "LYPreferencesKit.h"
+
 
 @interface CustomSettingsViewController () <PreferencesViewDelegate>
 
@@ -25,6 +25,8 @@
 	[super loadView];
 	
 	self.navigationItem.title = @"Custom Settings";
+	
+	self.pvSettings.delegate = self;
 }
 
 - (void)viewDidLoad {
