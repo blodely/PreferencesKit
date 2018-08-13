@@ -33,4 +33,6 @@ FOUNDATION_EXPORT NSString *const PreferencesGroupCellIdentifier;
 
 @interface PreferencesGroupCell : UITableViewCell
 
+@property (nonatomic, weak) UILabel *lblTitle;
+
 @end

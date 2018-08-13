@@ -29,6 +29,7 @@
 
 #import "PreferencesView.h"
 #import "PreferencesBaseCell.h"
+#import "PreferencesGroupCell.h"
 #import "PKEntity.h"
 #import <Masonry/Masonry.h>
 
@@ -66,15 +67,12 @@
 		[self addSubview:tableview];
 		tbPreferences = tableview;
 		
-		UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 0);
 		[tbPreferences mas_makeConstraints:^(MASConstraintMaker *make) {
-			make.edges.equalTo(self).with.insets(padding);
+			make.edges.equalTo(self).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
 		}];
 		
-		tbPreferences.separatorStyle = UITableViewCellSeparatorStyleNone;
-		
+		[tbPreferences registerClass:[PreferencesGroupCell class] forCellReuseIdentifier:PreferencesGroupCellIdentifier];
 		[tbPreferences registerClass:[PreferencesBaseCell class] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
-//		[tbPreferences registerNib:[UINib nibWithNibName:@"PreferencesBaseCell" bundle:[NSBundle bundleWithPath:@""]] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
 	}
 }
 
@@ -102,6 +100,8 @@
 
 - (void)reloadData {
 	[tbPreferences reloadData];
+	
+	[tbPreferences setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
 
 #pragma mark - DELEGATE
@@ -116,7 +116,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
 	
-	__weak PKEntity *item = _datasource[idp.section][PK_SECTION_ITEMS][idp.row];
+	if (idp.row == 0) {
+		// GROUP TITLE CELL
+		
+		PreferencesGroupCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesGroupCellIdentifier forIndexPath:idp];
+		cell.lblTitle.text = _datasource[idp.section][PK_SECTION_TITLE];
+		return cell;
+	}
+	
+	__weak PKEntity *item = _datasource[idp.section][PK_SECTION_ITEMS][idp.row - 1];
 	
 	PreferencesBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBaseCellIdentifier forIndexPath:idp];
 	cell.lblTitle.text = item.title;
@@ -128,7 +136,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [_datasource[section][PK_SECTION_ITEMS] count];
+	return [_datasource[section][PK_SECTION_ITEMS] count] + 1;
 }
 
 

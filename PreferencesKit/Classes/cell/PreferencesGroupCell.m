@@ -29,6 +29,7 @@
 
 #import "PreferencesGroupCell.h"
 #import <Masonry/Masonry.h>
+#import <LYCategory/LYCategory.h>
 
 NSString *const PreferencesGroupCellIdentifier = @"PreferencesGroupCellIdentifier";
 
@@ -40,6 +41,25 @@ NSString *const PreferencesGroupCellIdentifier = @"PreferencesGroupCellIdentifie
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 		
+		{
+			// SELF CONFIGURATIONS
+			self.selectionStyle = UITableViewCellSelectionStyleNone;
+			self.backgroundColor = [UIColor colorWithHex:@"#f2f2f2" andAlpha:1.0];
+		}
+		
+		{
+			UILabel *label = [[UILabel alloc] init];
+			[self addSubview:label];
+			_lblTitle = label;
+			
+			_lblTitle.font = [UIFont systemFontOfSize:14];
+			_lblTitle.textColor = [UIColor darkGrayColor];
+			
+			[_lblTitle mas_makeConstraints:^(MASConstraintMaker *make) {
+				make.edges.equalTo(self).with.insets(UIEdgeInsetsMake(20, 12, 12, 12));
+				make.height.mas_equalTo(20);
+			}];
+		}
 	}
 	return self;
 }
