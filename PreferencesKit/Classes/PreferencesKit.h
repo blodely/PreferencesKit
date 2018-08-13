@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PreferencesKit/PKEntity.h>
+#import <PreferencesKit/PreferencesView.h>
+#import <PreferencesKit/NSFileManager+PreferencesKit.h>
 
 FOUNDATION_EXPORT NSString *const PK_TITLE;
 FOUNDATION_EXPORT NSString *const PK_ITEM;

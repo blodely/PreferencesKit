@@ -21,14 +21,21 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
 	if (self = [super initWithCoder:aDecoder]) {
-		
+		[self initial];
+	}
+	return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+	if (self = [super initWithFrame:frame]) {
+		[self initial];
 	}
 	return self;
 }
 
 - (void)initial {
-	
-	
+	NSLog(@"RUN");
+	self.backgroundColor = [UIColor whiteColor];
 }
 
 /*
