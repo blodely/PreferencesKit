@@ -1,10 +1,12 @@
 PODS:
   - FCFileManager (1.0.18)
   - GDataXML-HTML (1.3.0)
+  - LYCategory (1.2.31)
   - Masonry (1.1.0)
   - PreferencesKit (1.0.1):
     - FCFileManager (~> 1.0.18)
     - GDataXML-HTML
+    - LYCategory
     - Masonry (~> 1.1.0)
 
 DEPENDENCIES:
@@ -14,6 +16,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FCFileManager
     - GDataXML-HTML
+    - LYCategory
     - Masonry
 
 EXTERNAL SOURCES:
@@ -23,8 +26,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
   GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
+  LYCategory: a057ce3f467ad4aca121fbdfc10f41e037d9ac42
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  PreferencesKit: b70fafb979e70c479d0e90c994f9b21f35d713b6
+  PreferencesKit: 6ec9f85d42e954eaec05dce4f541d9a9a790bbee
 
 PODFILE CHECKSUM: 92d5a3ad9f2559efd28389dc5b05ef5cd2357c43
 
