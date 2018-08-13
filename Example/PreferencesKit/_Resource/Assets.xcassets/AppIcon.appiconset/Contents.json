@@ -47,6 +47,12 @@
       "idiom" : "iphone",
       "filename" : "appico-180.png",
       "scale" : "3x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "Icon.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
