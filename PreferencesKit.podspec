@@ -36,5 +36,6 @@ Using plist configuration file to set and auto generate preferences view.
 
 	s.dependency 'FCFileManager', '~> 1.0.18'
 	s.dependency 'GDataXML-HTML'
+	s.dependency 'Masonry', '~> 1.1.0'
 
 end

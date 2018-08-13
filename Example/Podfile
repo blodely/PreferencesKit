@@ -9,9 +9,4 @@ use_frameworks!
 target 'PreferencesKit_Example' do
   pod 'PreferencesKit', :path => '../'
 
-  target 'PreferencesKit_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
