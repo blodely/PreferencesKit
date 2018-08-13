@@ -7,8 +7,8 @@
 //
 
 #import "PreferencesView.h"
-#import "LYPreferencesKit.h"
 #import "PreferencesBaseCell.h"
+#import "PKEntity.h"
 
 @interface PreferencesView () <UITableViewDelegate, UITableViewDataSource> {
 	
@@ -36,6 +36,17 @@
 - (void)initial {
 	NSLog(@"RUN");
 	self.backgroundColor = [UIColor whiteColor];
+	
+	{
+		UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+		tableview.frame = CGRectZero;
+		tableview.delegate = self;
+		tableview.dataSource = self;
+		[self addSubview:tableview];
+		tbPreferences = tableview;
+		
+		[tbPreferences registerNib:[UINib nibWithNibName:@"PreferencesBaseCell" bundle:[NSBundle bundleWithPath:@""]] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
+	}
 }
 
 /*

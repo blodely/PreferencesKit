@@ -8,6 +8,8 @@
 
 #import "PreferencesBaseCell.h"
 
+NSString *const PreferencesBaseCellIdentifier = @"PreferencesBaseCellIdentifier";
+
 @implementation PreferencesBaseCell
 
 - (void)awakeFromNib {

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+FOUNDATION_EXPORT NSString *const PreferencesBaseCellIdentifier;
+
 @interface PreferencesBaseCell : UITableViewCell
 
 @end

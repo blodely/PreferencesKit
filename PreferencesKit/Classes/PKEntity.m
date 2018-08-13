@@ -7,7 +7,6 @@
 //
 
 #import "PKEntity.h"
-#import "LYPreferencesKit.h"
 
 NSString *const PK_SECTION_TITLE = @"pk.section.title";
 NSString *const PK_SECTION_ITEMS = @"pk.section.items";
