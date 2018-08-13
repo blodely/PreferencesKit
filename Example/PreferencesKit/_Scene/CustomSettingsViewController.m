@@ -15,6 +15,18 @@
 
 @implementation CustomSettingsViewController
 
+- (instancetype)init {
+	if (self = [super initWithNibName:@"CustomSettingsViewController" bundle:[NSBundle mainBundle]]) {
+	}
+	return self;
+}
+
+- (void)loadView {
+	[super loadView];
+	
+	self.navigationItem.title = @"Custom Settings";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.

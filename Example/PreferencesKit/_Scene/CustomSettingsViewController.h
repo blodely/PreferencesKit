@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PreferencesView.h"
+#import <PreferencesKit/PreferencesKit.h>
 
 @interface CustomSettingsViewController : UIViewController
 

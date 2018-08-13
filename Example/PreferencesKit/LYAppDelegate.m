@@ -7,7 +7,8 @@
 //
 
 #import "LYAppDelegate.h"
-#import "LYPreferencesKit.h"
+#import <PreferencesKit/PreferencesKit.h>
+#import <FCFileManager/FCFileManager.h>
 
 #import "CustomSettingsViewController.h"
 
@@ -32,7 +33,7 @@
 	
 	UINavigationController *navCustom = [[UINavigationController alloc] initWithRootViewController:[[CustomSettingsViewController alloc] init]];
 	navCustom.tabBarItem.title = @"Custom";
-	navCustom.tabBarItem.image = [UIImage imageNamed:@""];
+	navCustom.tabBarItem.image = [UIImage imageNamed:@"tab-custom"];
 	navCustom.tabBarController.tabBar.translucent = NO;
 	
 	tabs.viewControllers = @[navCustom,];
