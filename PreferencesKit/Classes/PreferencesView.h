@@ -15,7 +15,7 @@
 @end
 
 
-IB_DESIGNABLE
+//IB_DESIGNABLE
 @interface PreferencesView : UIView
 
 @property (nonatomic, strong, nullable) NSArray *datasource;
