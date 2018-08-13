@@ -1,8 +1,8 @@
 //
-//  PreferencesBaseCell.m
-//  PreferencesKit
+//  PreferencesBooleanCell.m
+//  PREFERENCESKIT
 //
-//  CREATED BY LUO YU ON 2017-04-29.
+//  CREATED BY LUO YU ON 2018-08-13.
 //
 //	The MIT License (MIT)
 //
@@ -27,42 +27,67 @@
 //	SOFTWARE.
 //
 
-#import "PreferencesBaseCell.h"
+#import "PreferencesBooleanCell.h"
 #import <Masonry/Masonry.h>
 
-NSString *const PreferencesBaseCellIdentifier = @"PreferencesBaseCellIdentifier";
+NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdentifier";
 
-@implementation PreferencesBaseCell
-
-- (void)awakeFromNib {
-	[super awakeFromNib];
-	// INITIALIZATION CODE
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-	// CONFIGURE THE VIEW FOR THE SELECTED STATE
-}
+@implementation PreferencesBooleanCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 		
 		{
+			// SETUP
+			self.selectionStyle = UITableViewCellSelectionStyleNone;
+			self.clipsToBounds = YES;
+		}
+		
+		{
+			// TITLE
 			UILabel *label = [[UILabel alloc] init];
-			label.frame = (CGRect){10, 2, 200, 20};
 			[self addSubview:label];
 			_lblTitle = label;
 			
-			UIEdgeInsets padding = UIEdgeInsetsMake(12, 12, 12, 12);
-			[_lblTitle mas_makeConstraints:^(MASConstraintMaker *make) {
-				make.height.mas_equalTo(20);
-				make.edges.equalTo(self).with.insets(padding);
-			}];
+			_lblTitle.backgroundColor = [UIColor lightGrayColor];
 		}
 		
+		{
+			// TOGGLE
+			UISwitch *switchui = [[UISwitch alloc] initWithFrame:CGRectZero];
+			[self addSubview:switchui];
+			_swToggle = switchui;
+		}
+		
+		{
+			// AUTO LAYOUT
+			
+			[_lblTitle mas_makeConstraints:^(MASConstraintMaker *make) {
+				make.left.equalTo(self.mas_left).with.offset(12);
+				make.top.equalTo(self.mas_top).with.offset(12);
+				make.bottom.equalTo(self.mas_bottom).with.offset(12);
+				make.height.mas_equalTo(20);
+//				make.right.equalTo(self->_swToggle.mas_left).with.mas_offset(8);
+			}];
+			[_swToggle mas_makeConstraints:^(MASConstraintMaker *make) {
+				make.right.equalTo(self).mas_offset(12);
+				make.centerY.equalTo(self.m);
+			}];
+			
+		}
 	}
 	return self;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
 }
 
 @end

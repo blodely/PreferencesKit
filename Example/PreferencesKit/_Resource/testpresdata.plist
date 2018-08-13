@@ -54,13 +54,13 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>饱和度</string>
+				<string>开关</string>
 				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
 				<key>pk.entity.type</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>pk.entity.value</key>
-				<real>0.3</real>
+				<true/>
 			</dict>
 			<dict>
 				<key>pk.entity.name</key>

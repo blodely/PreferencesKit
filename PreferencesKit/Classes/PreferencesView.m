@@ -6,7 +6,7 @@
 //
 //	The MIT License (MIT)
 //
-//  COPYRIGHT © 2016~2018 LUO YU(骆昱). ALL RIGHTS RESERVED.
+//  COPYRIGHT © 2016~2018 LUO YU(骆昱, indie.luo@gmail.com). ALL RIGHTS RESERVED.
 //
 //	Permission is hereby granted, free of charge, to any person obtaining a copy
 //	of this software and associated documentation files (the "Software"), to deal
@@ -30,6 +30,7 @@
 #import "PreferencesView.h"
 #import "PreferencesBaseCell.h"
 #import "PreferencesGroupCell.h"
+#import "PreferencesBooleanCell.h"
 #import "PKEntity.h"
 #import <Masonry/Masonry.h>
 
@@ -73,6 +74,7 @@
 		
 		[tbPreferences registerClass:[PreferencesGroupCell class] forCellReuseIdentifier:PreferencesGroupCellIdentifier];
 		[tbPreferences registerClass:[PreferencesBaseCell class] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
+		[tbPreferences registerClass:[PreferencesBooleanCell class] forCellReuseIdentifier:PreferencesBooleanCellIdentifier];
 	}
 }
 
@@ -125,6 +127,17 @@
 	}
 	
 	__weak PKEntity *item = _datasource[idp.section][PK_SECTION_ITEMS][idp.row - 1];
+	
+	switch (item.type) {
+		case PKEntityTypeBoolean: {
+			PreferencesBooleanCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBooleanCellIdentifier forIndexPath:idp];
+			cell.lblTitle.text = item.title;
+			return cell;
+		} break;
+		default: {
+			
+		} break;
+	}
 	
 	PreferencesBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBaseCellIdentifier forIndexPath:idp];
 	cell.lblTitle.text = item.title;

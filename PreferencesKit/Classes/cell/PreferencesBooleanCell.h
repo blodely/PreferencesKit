@@ -1,8 +1,8 @@
 //
-//  PreferencesView.h
-//  PreferencesSample
+//  PreferencesBooleanCell.h
+//  PREFERENCESKIT
 //
-//  CREATED BY LUO YU ON 2016-07-21.
+//  CREATED BY LUO YU ON 2018-08-13.
 //
 //	The MIT License (MIT)
 //
@@ -29,20 +29,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class PreferencesView;
+FOUNDATION_EXPORT NSString *const PreferencesBooleanCellIdentifier;
 
-@protocol PreferencesViewDelegate <NSObject>
+@interface PreferencesBooleanCell : UITableViewCell
 
-@end
+@property (nonatomic, weak) UILabel *lblTitle;
 
-
-//IB_DESIGNABLE
-@interface PreferencesView : UIView
-
-@property (nonatomic, strong, nullable) NSArray *datasource;
-
-@property (nonatomic, weak, nullable) id <PreferencesViewDelegate> delegate;
-
-- (void)reloadData;
+@property (nonatomic, weak) UISwitch *swToggle;
 
 @end
