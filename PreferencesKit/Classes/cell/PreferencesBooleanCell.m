@@ -48,8 +48,6 @@ NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdent
 			UILabel *label = [[UILabel alloc] init];
 			[self addSubview:label];
 			_lblTitle = label;
-			
-			_lblTitle.backgroundColor = [UIColor lightGrayColor];
 		}
 		
 		{
@@ -63,15 +61,15 @@ NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdent
 			// AUTO LAYOUT
 			
 			[_lblTitle mas_makeConstraints:^(MASConstraintMaker *make) {
-				make.left.equalTo(self.mas_left).with.offset(12);
-				make.top.equalTo(self.mas_top).with.offset(12);
-				make.bottom.equalTo(self.mas_bottom).with.offset(12);
+				make.edges.equalTo(self).width.insets(UIEdgeInsetsMake(12, 12, 12, 60));
 				make.height.mas_equalTo(20);
-//				make.right.equalTo(self->_swToggle.mas_left).with.mas_offset(8);
 			}];
 			[_swToggle mas_makeConstraints:^(MASConstraintMaker *make) {
-				make.right.equalTo(self).mas_offset(12);
-				make.centerY.equalTo(self.m);
+				make.right.equalTo(self.mas_right).with.offset(-12);
+				make.centerY.equalTo(self);
+				
+				make.height.mas_equalTo(31);	// DEFAULT
+				make.width.mas_equalTo(49);		// DEFAULT
 			}];
 			
 		}
