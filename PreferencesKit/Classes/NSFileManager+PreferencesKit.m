@@ -85,7 +85,7 @@
 				}
 					break;
 				case PKEntityTypeSectionNumber: {
-					
+					entity.value = one[PK_ENTITY_VALUE];
 				}
 					break;
 				case PKEntityTypeNumberInt: {

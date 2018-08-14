@@ -31,6 +31,7 @@
 #import "PreferencesBaseCell.h"
 #import "PreferencesGroupCell.h"
 #import "PreferencesBooleanCell.h"
+#import "PreferencesSectionCell.h"
 #import "PKEntity.h"
 #import <Masonry/Masonry.h>
 
@@ -75,6 +76,7 @@
 		[tbPreferences registerClass:[PreferencesGroupCell class] forCellReuseIdentifier:PreferencesGroupCellIdentifier];
 		[tbPreferences registerClass:[PreferencesBaseCell class] forCellReuseIdentifier:PreferencesBaseCellIdentifier];
 		[tbPreferences registerClass:[PreferencesBooleanCell class] forCellReuseIdentifier:PreferencesBooleanCellIdentifier];
+		[tbPreferences registerClass:[PreferencesSectionCell class] forCellReuseIdentifier:PreferencesSectionCellIdentifier];
 	}
 }
 
@@ -132,6 +134,14 @@
 		case PKEntityTypeBoolean: {
 			PreferencesBooleanCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBooleanCellIdentifier forIndexPath:idp];
 			cell.lblTitle.text = item.title;
+			return cell;
+		} break;
+		case PKEntityTypeSectionNumber: {
+			PreferencesSectionCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesSectionCellIdentifier forIndexPath:idp];
+			cell.lblTitle.text = item.title;
+			for (int i = 0; i < [item.value count]; i++) {
+				[cell.seg insertSegmentWithTitle:[NSString stringWithFormat:@"%@", item.value[i]] atIndex:i animated:NO];
+			}
 			return cell;
 		} break;
 		default: {
