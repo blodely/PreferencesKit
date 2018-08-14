@@ -31,10 +31,18 @@
 
 FOUNDATION_EXPORT NSString *const PreferencesBooleanCellIdentifier;
 
+@class PreferencesBooleanCell;
+
+@protocol PreferencesBooleanCellDelegate <NSObject>
+@optional
+- (void)toggleChanged:(BOOL)newValue inCell:(PreferencesBooleanCell *)cell;
+@end
+
 @interface PreferencesBooleanCell : UITableViewCell
 
 @property (nonatomic, weak) UILabel *lblTitle;
-
 @property (nonatomic, weak) UISwitch *swToggle;
+
+@property (weak, nonatomic) id <PreferencesBooleanCellDelegate> delegate;
 
 @end

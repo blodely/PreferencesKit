@@ -35,6 +35,18 @@ NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdent
 
 @implementation PreferencesBooleanCell
 
+// MARK: - ACTION
+
+- (void)toggleValueChanged:(UISwitch *)sender {
+	if ([self.delegate respondsToSelector:@selector(toggleChanged:inCell:)]) {
+		[self.delegate toggleChanged:sender.on inCell:self];
+	} else {
+		NSLog(@"DELEGATE NOT FOUND");
+	}
+}
+
+// MARK: - INIT
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 		
@@ -59,6 +71,8 @@ NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdent
 			
 			[_swToggle setOnTintColor:[PreferencesKit kit].themeColor];
 			[_swToggle setTintColor:[PreferencesKit kit].themeColor];
+			
+			[_swToggle addTarget:self action:@selector(toggleValueChanged:) forControlEvents:UIControlEventValueChanged];
 		}
 		
 		{

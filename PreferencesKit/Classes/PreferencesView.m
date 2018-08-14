@@ -35,7 +35,8 @@
 #import "PKEntity.h"
 #import <Masonry/Masonry.h>
 
-@interface PreferencesView () <UITableViewDelegate, UITableViewDataSource> {
+@interface PreferencesView () <UITableViewDelegate, UITableViewDataSource,
+	PreferencesBooleanCellDelegate> {
 	
 	__weak UITableView *tbPreferences;
 	
@@ -43,6 +44,8 @@
 @end
 
 @implementation PreferencesView
+
+// MARK: - INIT
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
 	if (self = [super initWithCoder:aDecoder]) {
@@ -59,7 +62,7 @@
 }
 
 - (void)initial {
-	NSLog(@"RUN");
+	
 	self.backgroundColor = [UIColor whiteColor];
 	
 	{
@@ -88,19 +91,21 @@
 }
 */
 
+// MARK: - OVERRIDE
+
 - (void)setFrame:(CGRect)frame {
 	[super setFrame:frame];
 	
 	tbPreferences.frame = (CGRect){0, 0, frame.size.width, frame.size.height};
 }
 
-#pragma mark - PROPERTY
+// MARK: - PROPERTY
 
 - (void)setDatasource:(NSArray *)datasource {
 	_datasource = datasource;
 }
 
-#pragma mark - METHOD
+// MARK: - METHOD
 
 - (void)reloadData {
 	[tbPreferences reloadData];
@@ -108,15 +113,15 @@
 	[tbPreferences setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
 
-#pragma mark - DELEGATE
+// MARK: - DELEGATE
 
-#pragma mark | UITableViewDelegate
+// MARK: | UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)idp {
 	[tableView deselectRowAtIndexPath:idp animated:YES];
 }
 
-#pragma mark | UITableViewDataSource
+// MARK: | UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
 	
@@ -133,6 +138,7 @@
 	switch (item.type) {
 		case PKEntityTypeBoolean: {
 			PreferencesBooleanCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBooleanCellIdentifier forIndexPath:idp];
+			cell.delegate = self;
 			cell.lblTitle.text = item.title;
 			cell.swToggle.selected = item.valueBool;
 			return cell;
@@ -163,5 +169,12 @@
 	return [_datasource[section][PK_SECTION_ITEMS] count] + 1;
 }
 
+// MARK: | PreferencesBooleanCellDelegate
+
+- (void)toggleChanged:(BOOL)newValue inCell:(PreferencesBooleanCell *)cell {
+	NSIndexPath *idp = [tbPreferences indexPathForCell:cell];
+	
+	
+}
 
 @end
