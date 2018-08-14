@@ -29,6 +29,7 @@
 
 #import "PreferencesSectionCell.h"
 #import <Masonry/Masonry.h>
+#import "PreferencesKit.h"
 
 NSString *const PreferencesSectionCellIdentifier = @"PreferencesSectionCellIdentifier";
 
@@ -53,6 +54,8 @@ NSString *const PreferencesSectionCellIdentifier = @"PreferencesSectionCellIdent
 			UISegmentedControl *segment = [[UISegmentedControl alloc] init];
 			[self addSubview:segment];
 			_seg = segment;
+			
+			[_seg setTintColor:[PreferencesKit kit].themeColor];
 		}
 		
 		{

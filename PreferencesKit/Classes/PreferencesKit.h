@@ -44,4 +44,6 @@ FOUNDATION_EXPORT NSString *const PK_ITEM;
  */
 + (instancetype)kit;
 
+@property (nonatomic, strong) UIColor *themeColor;
+
 @end

@@ -9,6 +9,7 @@
 #import "LYAppDelegate.h"
 #import <PreferencesKit/PreferencesKit.h>
 #import <FCFileManager/FCFileManager.h>
+#import <LYCategory/LYCategory.h>
 
 #import "CustomSettingsViewController.h"
 
@@ -41,6 +42,8 @@
 	_window.rootViewController = tabs;
 	
 	[_window makeKeyAndVisible];
+	
+	[PreferencesKit kit].themeColor = [UIColor colorWithHex:@"#fb3800" andAlpha:1.0];
 	
     return YES;
 }

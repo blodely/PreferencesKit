@@ -29,6 +29,7 @@
 
 #import "PreferencesKit.h"
 #import <FCFileManager/FCFileManager.h>
+#import <LYCategory/LYCategory.h>
 
 NSString *const PK_TITLE = @"PK_TITLE";
 NSString *const PK_ITEM = @"PK_ITEM";
@@ -54,6 +55,15 @@ static PreferencesKit *sharedPreferencesKit;
 		sharedPreferencesKit = [[PreferencesKit alloc] init];
 	});
 	return sharedPreferencesKit;
+}
+
+// MARK: - PROPERTY
+
+- (UIColor *)themeColor {
+	if (_themeColor == nil) {
+		return [UIView new].tintColor;
+	}
+	return _themeColor;
 }
 
 #pragma mark - FILE READ

@@ -28,6 +28,7 @@
 //
 
 #import "PreferencesBooleanCell.h"
+#import "PreferencesKit.h"
 #import <Masonry/Masonry.h>
 
 NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdentifier";
@@ -55,6 +56,9 @@ NSString *const PreferencesBooleanCellIdentifier = @"PreferencesBooleanCellIdent
 			UISwitch *switchui = [[UISwitch alloc] initWithFrame:CGRectZero];
 			[self addSubview:switchui];
 			_swToggle = switchui;
+			
+			[_swToggle setOnTintColor:[PreferencesKit kit].themeColor];
+			[_swToggle setTintColor:[PreferencesKit kit].themeColor];
 		}
 		
 		{
