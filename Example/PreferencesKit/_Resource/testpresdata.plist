@@ -15,7 +15,7 @@
 				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
 				<key>pk.entity.type</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>pk.entity.value</key>
 				<real>0.3</real>
 			</dict>
@@ -27,7 +27,7 @@
 				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
 				<key>pk.entity.type</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>pk.entity.value</key>
 				<real>0.4</real>
 			</dict>
@@ -39,7 +39,7 @@
 				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
 				<key>pk.entity.type</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>pk.entity.value</key>
 				<real>0.5</real>
 			</dict>
@@ -50,6 +50,18 @@
 		<string>调整2</string>
 		<key>pk.section.items</key>
 		<array>
+			<dict>
+				<key>pk.entity.name</key>
+				<string></string>
+				<key>pk.entity.title</key>
+				<string>无</string>
+				<key>pk.entity.subtitle</key>
+				<string>type none</string>
+				<key>pk.entity.type</key>
+				<integer>0</integer>
+				<key>pk.entity.value</key>
+				<string>1</string>
+			</dict>
 			<dict>
 				<key>pk.entity.name</key>
 				<string></string>
@@ -66,13 +78,17 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>灰度</string>
+				<string>区段</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>section number</string>
 				<key>pk.entity.type</key>
 				<integer>2</integer>
 				<key>pk.entity.value</key>
-				<real>0.4</real>
+				<array>
+					<integer>0</integer>
+					<integer>1</integer>
+					<integer>2</integer>
+				</array>
 			</dict>
 			<dict>
 				<key>pk.entity.name</key>
@@ -82,7 +98,19 @@
 				<key>pk.entity.subtitle</key>
 				<string>色彩调整</string>
 				<key>pk.entity.type</key>
-				<integer>2</integer>
+				<integer>3</integer>
+				<key>pk.entity.value</key>
+				<real>0.5</real>
+			</dict>
+			<dict>
+				<key>pk.entity.name</key>
+				<string></string>
+				<key>pk.entity.title</key>
+				<string>亮度</string>
+				<key>pk.entity.subtitle</key>
+				<string>色彩调整</string>
+				<key>pk.entity.type</key>
+				<integer>4</integer>
 				<key>pk.entity.value</key>
 				<real>0.5</real>
 			</dict>
