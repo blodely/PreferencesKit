@@ -134,6 +134,7 @@
 		case PKEntityTypeBoolean: {
 			PreferencesBooleanCell *cell = [tableView dequeueReusableCellWithIdentifier:PreferencesBooleanCellIdentifier forIndexPath:idp];
 			cell.lblTitle.text = item.title;
+			cell.swToggle.selected = item.valueBool;
 			return cell;
 		} break;
 		case PKEntityTypeSectionNumber: {
