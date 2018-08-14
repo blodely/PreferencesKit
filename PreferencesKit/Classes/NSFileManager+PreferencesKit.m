@@ -111,15 +111,26 @@
 		
 		[settings addObject:@{
 							  PK_SECTION_TITLE:section[PK_SECTION_TITLE],
-							  PK_SECTION_ITEMS: [secSettings count] > 0 ? [NSArray arrayWithArray:secSettings] : @[],
+							  PK_SECTION_ITEMS: [secSettings count] > 0 ? secSettings : [@[] mutableCopy],
 							  }];
 	}
 	
 	if ([settings count] > 0) {
-		return [NSArray arrayWithArray:settings];
+		return settings;
 	}
 	
 	return nil;
+}
+
++ (void)preferencesWriter:(NSArray *)prefData {
+	
+	// VALID DATA GONNA WRITE
+	if (prefData == nil) {
+		return;
+	}
+	
+	// THEN, WRITE TO DISK
+	
 }
 
 @end

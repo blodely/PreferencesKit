@@ -31,6 +31,8 @@
 
 @interface NSFileManager (PreferencesKit)
 
-+ (NSArray *)preferencesReader;
++ (NSMutableArray *)preferencesReader;
+
++ (void)preferencesWriter:(NSArray *)prefData;
 
 @end
