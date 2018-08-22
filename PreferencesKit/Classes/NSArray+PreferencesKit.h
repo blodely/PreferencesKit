@@ -1,8 +1,8 @@
 //
-//  PreferencesView.h
+//  NSArray+PreferencesKit.h
 //  PreferencesKit
 //
-//  CREATED BY LUO YU ON 2016-07-21.
+//  CREATED BY LUO YU ON 2018-08-22.
 //
 //	The MIT License (MIT)
 //
@@ -27,22 +27,16 @@
 //	SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@class PreferencesView;
+@interface NSArray (PreferencesKit)
 
-@protocol PreferencesViewDelegate <NSObject>
+- (NSMutableArray *)generatePreferencesDatasource;
 
 @end
 
+@interface NSMutableArray (PreferencesKit)
 
-//IB_DESIGNABLE
-@interface PreferencesView : UIView
-
-@property (nonatomic, strong, nullable) NSMutableArray *datasource;
-
-@property (nonatomic, weak, nullable) id <PreferencesViewDelegate> delegate;
-
-- (void)reloadData;
+- (void)setItemValue:(id)object atIndexPath:(NSIndexPath *)idp;
 
 @end

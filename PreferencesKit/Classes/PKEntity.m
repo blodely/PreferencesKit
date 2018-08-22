@@ -1,6 +1,6 @@
 //
 //  PKEntity.m
-//  PreferencesSample
+//  PreferencesKit
 //
 //  CREATED BY LUO YU ON 2016-07-21.
 //
@@ -118,11 +118,22 @@ NSString *const PK_ENTITY_VALUE = @"pk.entity.value";
 }
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"PKEntity {\n\tName=%@\n\tTitle=%@\n\tSubtitle=%@\n\tType=%@\n}",
+	id val;
+	if (_type == PKEntityTypeBoolean) {
+		val = @(_valueBool);
+	} else if (_type == PKEntityTypeNumberInt) {
+		val = @(_valueInt);
+	} else if (_type == PKEntityTypeNumberDouble) {
+		val = @(_valueDouble);
+	} else {
+		val = _value;
+	}
+	return [NSString stringWithFormat:@"PKEntity { Name=%@ Title=%@ Subtitle=%@ Type=%@ Value=%@ }",
 			_name,
 			_title,
 			_subtitle,
-			@(_type)
+			@(_type),
+			val
 			];
 }
 

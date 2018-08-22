@@ -1,6 +1,6 @@
 //
 //  NSFileManager+PreferencesKit.m
-//  PreferencesSample
+//  PreferencesKit
 //
 //  CREATED BY LUO YU ON 2016-07-21.
 //
@@ -31,10 +31,11 @@
 #import <FCFileManager/FCFileManager.h>
 //#import <GDataXML_HTML/GDataXMLNode.h>
 #import "PKEntity.h"
+#import "NSArray+PreferencesKit.h"
 
 @implementation NSFileManager (PreferencesKit)
 
-+ (NSArray *)preferencesReader {
++ (NSMutableArray *)preferencesReader {
 	
 	NSString *filepath = [NSHomeDirectory() stringByAppendingString:@"/Documents/ly.preferences.kit"];
 	NSString *filename = [filepath stringByAppendingString:@"/preferences.kit.plist"];
@@ -55,71 +56,7 @@
 		return nil;
 	}
 	
-	NSArray *reader = [FCFileManager readFileAtPathAsArray:filename];
-	
-	NSMutableArray *settings = [NSMutableArray arrayWithCapacity:1];
-	
-	for (NSDictionary *section in reader) {
-		
-		NSMutableArray *secSettings = [NSMutableArray arrayWithCapacity:1];
-		
-		for (NSDictionary *one in section[PK_SECTION_ITEMS]) {
-			
-			PKEntityType type = PKEntityTypeNone;
-			
-			type = [one[PK_ENTITY_TYPE] integerValue];
-			
-			PKEntity *entity = [[PKEntity alloc] initWithType:type];
-			
-			entity.name = [NSString stringWithFormat:@"%@", one[PK_ENTITY_NAME]];
-			entity.title = [NSString stringWithFormat:@"%@", one[PK_ENTITY_TITLE]];
-			entity.subtitle = [NSString stringWithFormat:@"%@", one[PK_ENTITY_SUBTITLE]];
-			
-			switch (type) {
-				case PKEntityTypeNone: {
-					entity.value = nil;
-				}
-					break;
-				case PKEntityTypeBoolean: {
-					entity.valueBool = [one[PK_ENTITY_VALUE] boolValue];
-				}
-					break;
-				case PKEntityTypeSectionNumber: {
-					entity.value = one[PK_ENTITY_VALUE];
-				}
-					break;
-				case PKEntityTypeNumberInt: {
-					entity.valueInt = [one[PK_ENTITY_VALUE] integerValue];
-				}
-					break;
-				case PKEntityTypeNumberDouble: {
-					entity.valueDouble = [one[PK_ENTITY_VALUE] doubleValue];
-				}
-					break;
-				case PKEntityTypeString: {
-					entity.value = [NSString stringWithFormat:@"%@", one[PK_ENTITY_VALUE]];
-				}
-					break;
-				default: {
-					entity.value = one[PK_ENTITY_VALUE];
-				}
-					break;
-			}
-			
-			[secSettings addObject:entity];
-		}
-		
-		[settings addObject:@{
-							  PK_SECTION_TITLE:section[PK_SECTION_TITLE],
-							  PK_SECTION_ITEMS: [secSettings count] > 0 ? secSettings : [@[] mutableCopy],
-							  }];
-	}
-	
-	if ([settings count] > 0) {
-		return settings;
-	}
-	
-	return nil;
+	return [[FCFileManager readFileAtPathAsArray:filename] generatePreferencesDatasource];
 }
 
 + (void)preferencesWriter:(NSArray *)prefData {

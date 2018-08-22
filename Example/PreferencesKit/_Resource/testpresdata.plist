@@ -4,16 +4,16 @@
 <array>
 	<dict>
 		<key>pk.section.title</key>
-		<string>调整</string>
+		<string>adjustments 1</string>
 		<key>pk.section.items</key>
 		<array>
 			<dict>
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>饱和度</string>
+				<string>saturation</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>color adjustment</string>
 				<key>pk.entity.type</key>
 				<integer>0</integer>
 				<key>pk.entity.value</key>
@@ -23,9 +23,9 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>灰度</string>
+				<string>grayscale</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>color adjustment</string>
 				<key>pk.entity.type</key>
 				<integer>0</integer>
 				<key>pk.entity.value</key>
@@ -35,9 +35,9 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>亮度</string>
+				<string>lightness</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>color adjustment</string>
 				<key>pk.entity.type</key>
 				<integer>0</integer>
 				<key>pk.entity.value</key>
@@ -47,14 +47,14 @@
 	</dict>
 	<dict>
 		<key>pk.section.title</key>
-		<string>调整2</string>
+		<string>adjustment 2</string>
 		<key>pk.section.items</key>
 		<array>
 			<dict>
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>无</string>
+				<string>none</string>
 				<key>pk.entity.subtitle</key>
 				<string>type none</string>
 				<key>pk.entity.type</key>
@@ -66,9 +66,9 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>开关</string>
+				<string>a switch</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>type switch/toggle</string>
 				<key>pk.entity.type</key>
 				<integer>1</integer>
 				<key>pk.entity.value</key>
@@ -78,7 +78,7 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>区段</string>
+				<string>a segmented control</string>
 				<key>pk.entity.subtitle</key>
 				<string>section number</string>
 				<key>pk.entity.type</key>
@@ -94,9 +94,9 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>亮度</string>
+				<string>sample item</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>color adjustment</string>
 				<key>pk.entity.type</key>
 				<integer>3</integer>
 				<key>pk.entity.value</key>
@@ -106,9 +106,9 @@
 				<key>pk.entity.name</key>
 				<string></string>
 				<key>pk.entity.title</key>
-				<string>亮度</string>
+				<string>sample item</string>
 				<key>pk.entity.subtitle</key>
-				<string>色彩调整</string>
+				<string>color adjustment</string>
 				<key>pk.entity.type</key>
 				<integer>4</integer>
 				<key>pk.entity.value</key>

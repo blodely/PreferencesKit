@@ -1,6 +1,6 @@
 //
 //  NSFileManager+PreferencesKit.h
-//  PreferencesSample
+//  PreferencesKit
 //
 //  CREATED BY LUO YU ON 2016-07-21.
 //

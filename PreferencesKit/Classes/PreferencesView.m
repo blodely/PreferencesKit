@@ -1,6 +1,6 @@
 //
 //  PreferencesView.m
-//  PreferencesSample
+//  PreferencesKit
 //
 //  CREATED BY LUO YU ON 2016-07-21.
 //
@@ -33,6 +33,7 @@
 #import "PreferencesBooleanCell.h"
 #import "PreferencesSectionCell.h"
 #import "PKEntity.h"
+#import "NSArray+PreferencesKit.h"
 #import <Masonry/Masonry.h>
 
 @interface PreferencesView () <UITableViewDelegate, UITableViewDataSource,
@@ -173,8 +174,7 @@
 
 - (void)toggleChanged:(BOOL)newValue inCell:(PreferencesBooleanCell *)cell {
 	NSIndexPath *idp = [tbPreferences indexPathForCell:cell];
-	
-	
+	[_datasource setItemValue:@(newValue) atIndexPath:[NSIndexPath indexPathForRow:(idp.row - 1) inSection:idp.section]];
 }
 
 @end
