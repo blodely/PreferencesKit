@@ -128,13 +128,8 @@ NSString *const PK_ENTITY_VALUE = @"pk.entity.value";
 	} else {
 		val = _value;
 	}
-	return [NSString stringWithFormat:@"PKEntity { Name=%@ Title=%@ Subtitle=%@ Type=%@ Value=%@ }",
-			_name,
-			_title,
-			_subtitle,
-			@(_type),
-			val
-			];
+	return [NSString stringWithFormat:@"PKEntity { Name=\"%@\" Title=\"%@\" Subtitle=\"%@\" Type=\"%@\" Value=\"%@\" }",
+			_name, _title, _subtitle, @(_type), val];
 }
 
 @end
